@@ -10,5 +10,5 @@ jobs:
             - run: ./build
             - uses: actions/upload-artifact@v4
               with:
-                name: hello
-                path: hello
+                name: hello-amd64
+                path: hello-amd64
