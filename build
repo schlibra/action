@@ -1,0 +1,8 @@
+#!/bin/bash
+start_time=`date +%s`
+arch=`dpkg --print-architecture`
+g++ hello.cpp -o hello-$arch -O9
+end_time=`date +%s`
+use_time=$(( $end_time - $start_time ))
+echo "当前架构：$arch"
+echo "编译用时：$use_time s"
